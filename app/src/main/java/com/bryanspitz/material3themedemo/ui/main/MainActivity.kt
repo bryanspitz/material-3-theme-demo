@@ -318,6 +318,18 @@ class MainActivity : ComponentActivity() {
                                 onValueChange = { filledTextValue = it },
                                 label = { Text(text = "Filled") },
                                 placeholder = { Text(text = "Filled placeholder") },
+                                leadingIcon = {
+                                    Icon(
+                                        imageVector = Icons.Default.Search,
+                                        contentDescription = null
+                                    )
+                                },
+                                trailingIcon = {
+                                    Icon(
+                                        imageVector = Icons.Default.Close,
+                                        contentDescription = null
+                                    )
+                                },
                                 isError = isError
                             )
                             OutlinedTextField(
@@ -325,6 +337,18 @@ class MainActivity : ComponentActivity() {
                                 onValueChange = { outlinedTextValue = it },
                                 label = { Text(text = "Outlined") },
                                 placeholder = { Text(text = "Outlined placeholder") },
+                                leadingIcon = {
+                                    Icon(
+                                        imageVector = Icons.Default.Search,
+                                        contentDescription = null
+                                    )
+                                },
+                                trailingIcon = {
+                                    Icon(
+                                        imageVector = Icons.Default.Close,
+                                        contentDescription = null
+                                    )
+                                },
                                 isError = isError
                             )
                             Row(
